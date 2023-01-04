@@ -1,15 +1,3 @@
-<script setup lang="ts">
-type item = {
-  title: string;
-  to: string;
-  subtitle?: string;
-};
-const items: item[] = [
-  { title: "Home", to: "/", subtitle: "Welcome to the home page" },
-  { title: "About", to: "/about" },
-];
-</script>
-
 <template>
   <main>
     <!-- <div class="wrapper"> -->

@@ -21,12 +21,19 @@ const router = createRouter({
       path: "/projects",
       name: "projects",
       component: () => import("../views/ProjectsView.vue"),
+      children: [
+        {
+          path: "",
+          name: "projects list",
+          component: () => import("../views/projects/ProjectList.vue"),
+        },
+        {
+          path: "monster_fighter",
+          name: "monster fighter",
+          component: () => import("../views/projects/MonsterFighter.vue"),
+        },
+      ],
     },
-    // {
-    //   path: `/projects/:project`,
-    //   name: "project",
-    //   component: () => import("../views/ProjectView.vue"),
-    // },
   ],
 });
 
