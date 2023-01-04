@@ -11,7 +11,13 @@ import { RouterLink, RouterView } from "vue-router";
       <nav>
         <RouterLink to="/">About me</RouterLink>
         <RouterLink to="/about">CV</RouterLink>
-        <!-- <RouterLink to="/"><v-icon>mdi-github</v-icon></RouterLink> -->
+        <RouterLink to="/projects">Projects</RouterLink>
+        <a href="https://github.com/dannyjb164">
+          <v-icon icon="mdi-github" />
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-bishop-nz">
+          <v-icon>mdi-linkedin</v-icon>
+        </a>
       </nav>
     </div>
   </header>
