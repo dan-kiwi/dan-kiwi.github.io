@@ -1,19 +1,15 @@
+<script setup lang="ts">
+import ProjectCardVue from "@/components/ProjectCard.vue";
+</script>
+
 <template>
   <h1>My Projects</h1>
-  <v-card>
-    <v-card-title>Monster Fighter</v-card-title>
-    <v-card-subtitle>Game</v-card-subtitle>
-    <v-card-text>
-      <p>
-        Monster Fighter is a game I made in my second year software engineering
-        class at the University of Canterbury. It is a GUI text based fighting
-        game where you play as a monster and fight other monsters. The game is
-        written in Java using swing to create a GUI.
-      </p>
-    </v-card-text>
-    <v-card-actions>
-      <v-btn to="/projects/monster_fighter">More Information</v-btn>
-      <v-btn text>Source Code</v-btn>
-    </v-card-actions>
-  </v-card>
+  <ProjectCardVue
+    title="Monster Fighter"
+    subtitle="Game"
+    text="A simple game built with Vue 3 and TypeScript. The game is a simple turn-based battle between a player and a monster. The player can attack, heal, or give up. The monster can attack or give up. The game ends when either the player or monster gives up or the player's health reaches 0."
+    internalLink="/projects/monster-fighter"
+    externalLink="https://github.com/dannyjb164/monster-fighter"
+    programmingLanguage="Java"
+  />
 </template>
