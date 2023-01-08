@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { ProgramingLanguage } from "@/assets/projectInfo";
+
 const props = defineProps<{
   title: string;
   subtitle: string;
@@ -6,6 +8,7 @@ const props = defineProps<{
   text: string;
   internalLink: string;
   externalLink: string;
+  year: string;
 }>();
 
 const programmingLogo = () => {
@@ -24,14 +27,6 @@ const programmingLogo = () => {
       return "mdi-language-java";
   }
 };
-
-type ProgramingLanguage =
-  | "Vue"
-  | "TypeScript"
-  | "JavaScript"
-  | "C"
-  | "Python"
-  | "Java";
 </script>
 
 <template>
@@ -41,9 +36,9 @@ type ProgramingLanguage =
         <v-card-title>{{ props.title }}</v-card-title>
         <v-card-subtitle>{{ props.subtitle }}</v-card-subtitle>
       </div>
-      <div class="programming-language">
-        <v-card-text>{{ props.programmingLanguage }}</v-card-text>
-        <v-icon :icon="programmingLogo()" />
+      <div class="programming-metadata">
+        <v-card-text class="year">{{ props.year }}</v-card-text>
+        <v-icon :icon="programmingLogo()" size="x-large" />
       </div>
     </div>
     <v-card-text>
@@ -66,10 +61,15 @@ type ProgramingLanguage =
   align-items: center;
 }
 
-.programming-language {
+.programming-metadata {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-right: 16px;
+}
+
+.year {
+  font-size: 1rem;
 }
 </style>

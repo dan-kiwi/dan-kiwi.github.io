@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import VuePdfEmbed from "vue-pdf-embed";
+</script>
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <VuePdfEmbed source="src/assets/CV.pdf" />
   </div>
 </template>
 

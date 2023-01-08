@@ -1,22 +1,29 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-// import { mdiGithub } from '@mdi/js';
 </script>
 
 <template>
   <header>
-    <img width="300" src="@/assets/headshot.jpg" class="headshot" />
+    <img
+      alt="Daniel Bishop's headshot"
+      width="300"
+      src="@/assets/headshot.jpg"
+      class="headshot"
+    />
 
     <div class="wrapper">
       <nav>
         <RouterLink to="/">About me</RouterLink>
         <RouterLink to="/about">CV</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
-        <a href="https://github.com/dannyjb164">
+        <a href="https://github.com/dan-kiwi/">
           <v-icon icon="mdi-github" />
         </a>
-        <a href="https://www.linkedin.com/in/daniel-bishop-nz">
+        <a href="https://www.linkedin.com/in/dan-kiwi/">
           <v-icon>mdi-linkedin</v-icon>
+        </a>
+        <a href="https://www.instagram.com/danb164/">
+          <v-icon>mdi-instagram</v-icon>
         </a>
       </nav>
     </div>
@@ -40,7 +47,6 @@ header {
 }
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
