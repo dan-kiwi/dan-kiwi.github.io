@@ -1,4 +1,4 @@
-@import './base.css';
+@import "./base.css";
 
 #app {
   max-width: 1280px;
@@ -22,6 +22,10 @@ a,
 }
 
 @media (min-width: 1024px) {
+  :root {
+    overflow: hidden;
+  }
+
   body {
     display: flex;
     place-items: center;
@@ -31,5 +35,14 @@ a,
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+    height: 100vh;
+  }
+
+  main {
+    border-left: 1px solid lightgray;
+    padding-left: inherit;
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }

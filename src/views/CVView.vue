@@ -4,8 +4,7 @@ import VuePdfEmbed from "vue-pdf-embed";
 
 <template>
   <main>
-    <!-- <h1>Daniel Bishop's CV</h1> -->
-    <VuePdfEmbed source="src/assets/CV.pdf" />
+    <VuePdfEmbed source="src/assets/CV.pdf" width="600 " />
     <h4>Last updated: 01/01/2022</h4>
     <v-btn
       class="download-button"

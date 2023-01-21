@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from "vue-router";
       src="@/assets/headshot.jpg"
       class="headshot"
     />
-
+    <h1>Daniel Bishop</h1>
     <div class="wrapper">
       <nav>
         <RouterLink to="/">About me</RouterLink>
@@ -78,9 +78,9 @@ nav a:first-of-type {
     margin: auto;
   }
 
-  .headshot {
+  /* .headshot {
     margin: 0 2rem 0 0;
-  }
+  } */
 
   header .wrapper {
     display: flex;
