@@ -14,16 +14,13 @@ import { RouterLink, RouterView } from "vue-router";
     <div class="wrapper">
       <nav>
         <RouterLink to="/">About me</RouterLink>
-        <RouterLink to="/about">CV</RouterLink>
+        <RouterLink to="/cv">CV</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
         <a href="https://github.com/dan-kiwi/">
           <v-icon icon="mdi-github" />
         </a>
         <a href="https://www.linkedin.com/in/dan-kiwi/">
           <v-icon>mdi-linkedin</v-icon>
-        </a>
-        <a href="https://www.instagram.com/danb164/">
-          <v-icon>mdi-instagram</v-icon>
         </a>
       </nav>
     </div>
@@ -38,6 +35,8 @@ header {
   flex-direction: column;
   line-height: 1.5;
   max-height: 100vh;
+  place-items: center;
+  margin-bottom: 2rem;
 }
 
 .headshot {
@@ -70,17 +69,11 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
     margin: auto;
   }
-
-  /* .headshot {
-    margin: 0 2rem 0 0;
-  } */
 
   header .wrapper {
     display: flex;
@@ -90,9 +83,7 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }

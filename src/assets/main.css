@@ -1,11 +1,8 @@
 @import "./base.css";
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
+  width: 100%;
 }
 
 a,
@@ -15,13 +12,18 @@ a,
   transition: 0.4s;
 }
 
+main {
+  padding: 2rem 1rem;
+  border-top: 1px solid lightgray;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   :root {
     overflow: hidden;
   }
@@ -34,15 +36,14 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
     height: 100vh;
   }
 
   main {
     border-left: 1px solid lightgray;
-    padding-left: inherit;
-    padding-bottom: 2rem;
+    border-top: none;
     overflow-y: auto;
     overflow-x: hidden;
+    width: 100%;
   }
 }

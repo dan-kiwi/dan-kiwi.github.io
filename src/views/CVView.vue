@@ -4,7 +4,9 @@ import VuePdfEmbed from "vue-pdf-embed";
 
 <template>
   <main>
-    <VuePdfEmbed source="src/assets/CV.pdf" width="600 " />
+    <div class="CVContainer">
+      <VuePdfEmbed source="src/assets/CV.pdf" width="600 " />
+    </div>
     <h4>Last updated: 01/01/2022</h4>
     <v-btn
       class="download-button"
@@ -24,5 +26,13 @@ h1 {
 }
 v-btn {
   width: 100%;
+}
+main {
+  padding-top: 0;
+  place-items: center;
+}
+.CVContainer {
+  width: 600px;
+  margin: 0 auto;
 }
 </style>

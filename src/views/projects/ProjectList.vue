@@ -20,12 +20,9 @@ import projectInfo from "@/assets/projectInfo";
   </main>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<style scoped>
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 </style>

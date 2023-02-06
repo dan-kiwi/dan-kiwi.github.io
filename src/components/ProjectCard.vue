@@ -30,27 +30,29 @@ const programmingLogo = () => {
 </script>
 
 <template>
-  <v-card>
-    <div class="header">
-      <div class="titles">
-        <v-card-title>{{ props.title }}</v-card-title>
-        <v-card-subtitle>{{ props.subtitle }}</v-card-subtitle>
+  <div class="divCard">
+    <v-card>
+      <div class="header">
+        <div class="titles">
+          <v-card-title>{{ props.title }}</v-card-title>
+          <v-card-subtitle>{{ props.subtitle }}</v-card-subtitle>
+        </div>
+        <div class="programmingMetadata">
+          <v-card-text class="year">{{ props.year }}</v-card-text>
+          <v-icon :icon="programmingLogo()" size="x-large" />
+        </div>
       </div>
-      <div class="programming-metadata">
-        <v-card-text class="year">{{ props.year }}</v-card-text>
-        <v-icon :icon="programmingLogo()" size="x-large" />
-      </div>
-    </div>
-    <v-card-text>
-      <p>
-        {{ props.text }}
-      </p>
-    </v-card-text>
-    <v-card-actions>
-      <v-btn to="props.internalLink">More Information</v-btn>
-      <v-btn text>Source Code</v-btn>
-    </v-card-actions>
-  </v-card>
+      <v-card-text>
+        <p>
+          {{ props.text }}
+        </p>
+      </v-card-text>
+      <v-card-actions>
+        <!-- <v-btn to="props.internalLink">More Information</v-btn> -->
+        <v-btn text>Source Code</v-btn>
+      </v-card-actions>
+    </v-card>
+  </div>
 </template>
 
 <style scoped>
@@ -61,7 +63,7 @@ const programmingLogo = () => {
   align-items: center;
 }
 
-.programming-metadata {
+.programmingMetadata {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,5 +73,9 @@ const programmingLogo = () => {
 
 .year {
   font-size: 1rem;
+}
+
+.divCard {
+  margin-bottom: 1rem;
 }
 </style>
