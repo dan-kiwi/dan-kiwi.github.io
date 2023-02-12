@@ -1,6 +1,5 @@
 <template>
   <main>
-    <!-- <div class="wrapper"> -->
     <h1>Welcome to my personal website</h1>
     <p>
       Hi! My name is Daniel Bishop and I am currently studying at the University
