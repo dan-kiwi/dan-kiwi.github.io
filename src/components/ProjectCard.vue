@@ -49,7 +49,7 @@ const programmingLogo = () => {
       </v-card-text>
       <v-card-actions>
         <!-- <v-btn to="props.internalLink">More Information</v-btn> -->
-        <v-btn text>Source Code</v-btn>
+        <v-btn :href="props.externalLink" target="_blank">Source Code</v-btn>
       </v-card-actions>
     </v-card>
   </div>

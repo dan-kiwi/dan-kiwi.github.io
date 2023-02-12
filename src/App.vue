@@ -16,11 +16,14 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/">About me</RouterLink>
         <RouterLink to="/cv">CV</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
-        <a href="https://github.com/dan-kiwi/">
+        <a href="https://github.com/dan-kiwi/" target="_blank">
           <v-icon icon="mdi-github" />
         </a>
-        <a href="https://www.linkedin.com/in/dan-kiwi/">
+        <a href="https://www.linkedin.com/in/dan-kiwi/" target="_blank">
           <v-icon>mdi-linkedin</v-icon>
+        </a>
+        <a href="mailto:career@dan-kiwi.dev">
+          <v-icon>mdi-email</v-icon>
         </a>
       </nav>
     </div>

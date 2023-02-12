@@ -27,11 +27,11 @@ const router = createRouter({
           name: "projects list",
           component: () => import("../views/projects/ProjectList.vue"),
         },
-        {
-          path: "monster_fighter",
-          name: "monster fighter",
-          component: () => import("../views/projects/MonsterFighter.vue"),
-        },
+        // {
+        //   path: "monster_fighter",
+        //   name: "monster fighter",
+        //   component: () => import("../views/projects/MonsterFighter.vue"),
+        // },
       ],
     },
   ],
