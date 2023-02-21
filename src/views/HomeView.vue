@@ -2,19 +2,26 @@
   <main>
     <h1>Welcome to my personal website</h1>
     <p>
-      Hi! My name is Daniel Bishop and I am currently studying at the University
-      of Canterbury in Christchurch, New Zealand. I am studying towards a
-      Bachelor of Science, majoring in Computer Science and minoring in
-      Economics.
+      Hello and welcome to my website! I'm Daniel Bishop, a software engineer
+      with a passion for fitness, sports, and travel. Currently, I'm pursuing a
+      Bachelor of Science degree with a major in Computer Science and a minor in
+      Economics at the University of Canterbury in Christchurch, New Zealand.
     </p>
     <p>
-      This website is to showcase my work and to provide a place for me to show
-      my projects, CV and anything else I think is relevant.
+      When I'm not coding, you can find me in the gym, playing squash, or
+      planning my next adventure. Speaking of which, I'm currently traveling
+      around Europe as part of a university exchange program with the University
+      of Nottingham in the UK. It's been an incredible experience so far, and
+      I've had the opportunity to meet people from all over the world while
+      studying and exploring new places.
     </p>
     <p>
-      This website is still a work in progress. I hope to add to it as I
-      progress through my degree and career.
+      This website serves as a platform for me to showcase my work and share my
+      projects, CV, and anything else that I find relevant. I'm continually
+      updating and improving it, so make sure to check back regularly for
+      updates.
     </p>
+    <p>Thanks for stopping by, and I hope you enjoy exploring my website!</p>
     <!-- </div> -->
   </main>
 </template>
