@@ -4,7 +4,8 @@ export type ProgramingLanguage =
   | "JavaScript"
   | "C"
   | "Python"
-  | "Java";
+  | "Java"
+  | "OpenGL";
 
 export type ProjectProps = {
   title: string;
@@ -13,7 +14,7 @@ export type ProjectProps = {
   text: string;
   internalLink: string;
   externalLink: string;
-  year: string;
+  date: Date;
 };
 
 export const monsterFighter: ProjectProps = {
@@ -23,7 +24,7 @@ export const monsterFighter: ProjectProps = {
   internalLink: "/projects/monster-fighter",
   externalLink: "https://github.com/dan-kiwi/monster-fighter",
   programmingLanguage: "Java",
-  year: "2022",
+  date: new Date(2022, 4),
 };
 
 export const pong: ProjectProps = {
@@ -33,7 +34,7 @@ export const pong: ProjectProps = {
   internalLink: "/projects/pong",
   externalLink: "https://github.com/dan-kiwi/pong-uc-project",
   programmingLanguage: "C",
-  year: "2022",
+  date: new Date(2022, 9),
 };
 
 export const personalWebsite: ProjectProps = {
@@ -43,7 +44,17 @@ export const personalWebsite: ProjectProps = {
   internalLink: "/projects/personal-website",
   externalLink: "https://github.com/dan-kiwi/personal-website",
   programmingLanguage: "Vue",
-  year: "2023",
+  date: new Date(2023, 0),
 };
 
-export default [personalWebsite, monsterFighter, pong];
+export const onTheFarm: ProjectProps = {
+  title: "On The Farm",
+  subtitle: "3D graphics",
+  text: "A 3D graphics project built with OpenGL and C++. The project is a simple 3D scene of a farm with a sheep, water trough, and a hay bale. The user can move the camera around the scene and the user can make the sheep move around the scene.",
+  internalLink: "/projects/on-the-farm",
+  externalLink: "https://github.com/dan-kiwi/on-the-farm",
+  programmingLanguage: "OpenGL",
+  date: new Date(2023, 4),
+};
+
+export default [personalWebsite, monsterFighter, pong, onTheFarm];

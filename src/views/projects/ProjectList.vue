@@ -7,7 +7,7 @@ import projectInfo from "@/assets/projectInfo";
   <main>
     <h1>My Projects</h1>
     <ProjectCardVue
-      v-for="project in projectInfo"
+      v-for="project in projectInfo.sort((a, b) => b.date - a.date)"
       :key="project.title"
       :title="project.title"
       :subtitle="project.subtitle"
@@ -15,7 +15,11 @@ import projectInfo from "@/assets/projectInfo";
       :text="project.text"
       :internalLink="project.internalLink"
       :externalLink="project.externalLink"
-      :year="project.year"
+      :year="
+        project.date.toLocaleString('default', { month: 'long' }) +
+        ' ' +
+        project.date.getFullYear().toString()
+      "
     />
   </main>
 </template>

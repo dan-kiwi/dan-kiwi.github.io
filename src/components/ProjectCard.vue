@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import type { ProgramingLanguage } from "@/assets/projectInfo";
+import OpenGLIcon from "./icons/OpenGLIcon.vue";
+import JavaIcon from "./icons/JavaIcon.vue";
+import VueIcon from "./icons/VueIcon.vue";
+import CIcon from "./icons/CIcon.vue";
 
 const props = defineProps<{
   title: string;
@@ -14,19 +18,28 @@ const props = defineProps<{
 const programmingLogo = () => {
   switch (props.programmingLanguage) {
     case "Vue":
-      return "mdi-vuejs";
+      return VueIcon;
     case "TypeScript":
       return "mdi-language-typescript";
     case "JavaScript":
       return "mdi-language-javascript";
     case "C":
-      return "mdi-language-c";
+      return CIcon;
     case "Python":
       return "mdi-language-python";
     case "Java":
-      return "mdi-language-java";
+      return JavaIcon;
+    case "OpenGL":
+      return OpenGLIcon;
   }
 };
+
+// const programmingLogo2 = () => {
+//   switch (props.programmingLanguage) {
+//     case "Vue":
+//       return <v-icon icon="mdi-vuejs" size="x-large" />;
+//   }
+// };
 </script>
 
 <template>
