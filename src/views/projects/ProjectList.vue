@@ -7,7 +7,9 @@ import projectInfo from "@/assets/projectInfo";
   <main>
     <h1>My Projects</h1>
     <ProjectCardVue
-      v-for="project in projectInfo.sort((a, b) => b.date - a.date)"
+      v-for="project in projectInfo.sort(
+        (a, b) => b.date.getTime() - a.date.getTime()
+      )"
       :key="project.title"
       :title="project.title"
       :subtitle="project.subtitle"
