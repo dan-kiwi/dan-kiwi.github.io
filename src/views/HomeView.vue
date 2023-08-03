@@ -2,18 +2,24 @@
   <main>
     <h1>Welcome to my personal website</h1>
     <p>
-      Hello and welcome to my website! I'm Daniel Bishop, a software engineer
-      with a passion for fitness, sports, and travel. Currently, I'm pursuing a
-      Bachelor of Science degree with a major in Computer Science and a minor in
-      Economics at the University of Canterbury in Christchurch, New Zealand.
+      Hello and welcome to my website! I'm Daniel Bishop, currently a student at
+      the University of Canterbury in Christchurch, New Zealand. I'm studying
+      towards a Bachelor of Science degree with a major in Computer Science and
+      a minor in Economics.
+    </p>
+    <p>
+      I'm passionate about technology and enjoy learning about new and emerging
+      technologies. I'm particularly interested in web development, and I'm
+      currently working on a number of projects to improve my skills in this
+      area. I'm also interested in artifical intelligence and machine learning,
+      and I'm looking forward to learning more about these fields in the future.
     </p>
     <p>
       When I'm not coding, you can find me in the gym, playing squash, or
-      planning my next adventure. Speaking of which, I'm currently traveling
-      around Europe as part of a university exchange program with the University
-      of Nottingham in the UK. It's been an incredible experience so far, and
-      I've had the opportunity to meet people from all over the world while
-      studying and exploring new places.
+      planning my next adventure. Speaking of which, I have recently return from
+      Europe as part of a university exchange program with the University of
+      Nottingham. It was an incredible experience, with the opportunity to meet
+      people from all over the world while studying and exploring new places.
     </p>
     <p>
       This website serves as a platform for me to showcase my work and share my
@@ -22,7 +28,6 @@
       updates.
     </p>
     <p>Thanks for stopping by, and I hope you enjoy exploring my website!</p>
-    <!-- </div> -->
   </main>
 </template>
 
@@ -34,10 +39,4 @@ main {
   max-height: 100vh;
   gap: 1rem;
 }
-/* .wrapper {
-  width: 100%;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 2rem;
-} */
 </style>

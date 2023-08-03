@@ -3,7 +3,7 @@ import { ref } from "vue";
 import VuePdfEmbed from "vue-pdf-embed";
 let isLoading = ref(true);
 const pdfSource =
-  "https://cdn.jsdelivr.net/gh/dan-kiwi/public_files@9af901da980fec25cb75ffdde3e8fbffaef38e8b/CV_21_5_23.pdf";
+  "https://cdn.jsdelivr.net/gh/dan-kiwi/public_files@main/CV_3_8_23.pdf";
 const handleDocumentRender = (args: any) => {
   console.log(args);
   isLoading.value = false;
