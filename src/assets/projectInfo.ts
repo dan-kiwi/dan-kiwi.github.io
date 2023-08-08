@@ -5,7 +5,8 @@ export type ProgramingLanguage =
   | "C"
   | "Python"
   | "Java"
-  | "OpenGL";
+  | "OpenGL"
+  | "Next.js";
 
 export type ProjectProps = {
   title: string;
@@ -13,7 +14,7 @@ export type ProjectProps = {
   programmingLanguage: ProgramingLanguage;
   text: string;
   internalLink: string;
-  externalLink: string;
+  externalLink: string | null;
   date: Date;
 };
 
@@ -57,4 +58,20 @@ export const onTheFarm: ProjectProps = {
   date: new Date(2023, 4),
 };
 
-export default [personalWebsite, monsterFighter, pong, onTheFarm];
+export const pastureMarket: ProjectProps = {
+  title: "Pasture Market",
+  subtitle: "Marketplace (WIP)",
+  text: "A marketplace website for farmers to buy and sell commodities like cereals and livestock. This initiative is part of the University of Canterbury's Enterprise Challenge, a start-up accelerator program. This project is under development using Next.js and PostgreSQL and, due to commercial interests, will remain closed source.",
+  internalLink: "/projects/pasture-market",
+  externalLink: null,
+  programmingLanguage: "Next.js",
+  date: new Date(2023, 5),
+};
+
+export default [
+  personalWebsite,
+  monsterFighter,
+  pong,
+  onTheFarm,
+  pastureMarket,
+];

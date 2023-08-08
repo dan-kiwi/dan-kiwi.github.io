@@ -4,6 +4,7 @@ import OpenGLIcon from "./icons/OpenGLIcon.vue";
 import JavaIcon from "./icons/JavaIcon.vue";
 import VueIcon from "./icons/VueIcon.vue";
 import CIcon from "./icons/CIcon.vue";
+import ReactIcon from "./icons/ReactIcon.vue";
 
 const props = defineProps<{
   title: string;
@@ -11,7 +12,7 @@ const props = defineProps<{
   programmingLanguage: ProgramingLanguage;
   text: string;
   internalLink: string;
-  externalLink: string;
+  externalLink: string | null;
   year: string;
 }>();
 
@@ -31,15 +32,10 @@ const programmingLogo = () => {
       return JavaIcon;
     case "OpenGL":
       return OpenGLIcon;
+    case "Next.js":
+      return ReactIcon;
   }
 };
-
-// const programmingLogo2 = () => {
-//   switch (props.programmingLanguage) {
-//     case "Vue":
-//       return <v-icon icon="mdi-vuejs" size="x-large" />;
-//   }
-// };
 </script>
 
 <template>
@@ -60,7 +56,7 @@ const programmingLogo = () => {
           {{ props.text }}
         </p>
       </v-card-text>
-      <v-card-actions>
+      <v-card-actions v-if="props.externalLink">
         <!-- <v-btn to="props.internalLink">More Information</v-btn> -->
         <v-btn :href="props.externalLink" target="_blank">Source Code</v-btn>
       </v-card-actions>
