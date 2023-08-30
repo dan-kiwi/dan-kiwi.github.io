@@ -2,27 +2,52 @@
   <main>
     <h1>Welcome to my personal website</h1>
     <p>
-      Hello and welcome to my website! I'm Daniel Bishop, currently a student at the University of Canterbury in
-      Christchurch, New Zealand. I'm studying towards a Bachelor of Science degree with a major in Computer Science and a
-      minor in Economics.
+      Hello 👋! I'm a Computer Science student at the University of Canterbury,
+      balancing academic rigor with real-world experience as a full-stack
+      developer at a burgeoning software startup in Christchurch. Passionate
+      about technological innovation, I'm also in the early stages of launching
+      my own tech startup aimed at revolutionizing the farming marketplace.
     </p>
+    <p>👨‍💻 What I Do:</p>
     <p>
-      I'm passionate about technology and enjoy learning about new and emerging technologies. I'm particularly interested
-      in web development, and I'm currently working on several projects to improve my skills in this area. I'm also
-      interested in artificial intelligence and machine learning, and I'm looking forward to learning more about these
-      fields in the future.
+      As a full-stack developer, I've had the opportunity to work on various
+      projects that have honed my skills in languages like Typescript, Python
+      and Java. I specialize in building intuitive, scalable applications that
+      drive business value. I believe in writing clean, maintainable code and
+      have a knack for solving complex problems.
     </p>
+    <p>🌱 Entrepreneurial Spirit:</p>
     <p>
-      When I'm not coding, you can find me in the gym, playing squash, or planning my next adventure. Speaking of which, I
-      have recently returned from Europe as part of a university exchange program with the University of Nottingham. It
-      was an incredible experience, with the opportunity to meet people from all over the world while studying and
-      exploring new places.
+      My interest doesn't stop at coding. I am currently working on a startup
+      that aspires to bridge the gap between farmers and consumers through a
+      comprehensive, user-friendly marketplace. I'm involved in everything from
+      business strategy to product development, and I'm keen to make an impact
+      on sustainable farming practices through technology.
     </p>
+    <p>📚 Academic Background:</p>
     <p>
-      This website serves as a platform for me to showcase my work and share my projects, CV, and anything else that I
-      find relevant. I'm continually updating and improving it, so make sure to check back regularly for updates.
+      I'm currently pursuing a degree in Computer Science at the University of
+      Canterbury. My academic journey has provided me with a strong theoretical
+      foundation in computer science, which complements my practical experience.
+      I am particularly interested in algorithms, data structures, and
+      artificial intelligence.This website serves as a platform for me to
+      showcase my work and share my projects, CV, and anything else that I find
+      relevant. I'm continually updating and improving it, so make sure to check
+      back regularly for updates.
     </p>
-    <p>Thanks for stopping by, and I hope you enjoy exploring my website!</p>
+    <p>💪 Work-Life Balance:</p>
+    <p>
+      When I'm not buried in code or business plans, you'll find me at the gym
+      or playing squash. I believe that a healthy body fuels a healthy mind,
+      which in turn, makes me more productive and focused.
+    </p>
+    <p>🎯 Goals:</p>
+    <p>
+      My career focus is startup-centric. Whether it's successfully launching my
+      own startup or contributing to another innovative startup, I am committed
+      to being part of dynamic teams that aim to disrupt industries and redefine
+      paradigms.
+    </p>
   </main>
 </template>
 
@@ -33,4 +58,5 @@ main {
   line-height: 1.5;
   max-height: 100vh;
   gap: 1rem;
-}</style>
+}
+</style>
