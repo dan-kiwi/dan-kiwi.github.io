@@ -3,7 +3,7 @@
     <h1>Welcome to my personal website</h1>
     <p>
       Hello 👋! I'm a Computer Science student at the University of Canterbury,
-      balancing academic rigor with real-world experience as a full-stack
+      balancing academic rigour with real-world experience as a full-stack
       developer at a burgeoning software startup in Christchurch. Passionate
       about technological innovation, I'm also in the early stages of launching
       my own tech startup aimed at revolutionizing the farming marketplace.
@@ -19,8 +19,8 @@
     <p>🌱 Entrepreneurial Spirit:</p>
     <p>
       My interest doesn't stop at coding. I am currently working on a startup
-      that aspires to bridge the gap between farmers and consumers through a
-      comprehensive, user-friendly marketplace. I'm involved in everything from
+      that aims to optimize this market by reducing middleman involvement and
+      offering real-time pricing information. I'm involved in everything from
       business strategy to product development, and I'm keen to make an impact
       on sustainable farming practices through technology.
     </p>
