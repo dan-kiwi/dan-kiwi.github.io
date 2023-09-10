@@ -14,7 +14,7 @@ export type ProjectProps = {
   programmingLanguage: ProgramingLanguage;
   text: string;
   internalLink: string;
-  sourceCode?: string | null;
+  sourceCode: string | null;
   externalLink?: string;
   date: Date;
 };
