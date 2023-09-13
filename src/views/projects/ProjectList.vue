@@ -16,7 +16,8 @@ import projectInfo from "@/assets/projectInfo";
       :programmingLanguage="project.programmingLanguage"
       :text="project.text"
       :internalLink="project.internalLink"
-      :externalLink="project.externalLink"
+      :sourceCode="project.sourceCode"
+      :externalLink="project.externalLink ?? null"
       :year="
         project.date.toLocaleString('default', { month: 'long' }) +
         ' ' +

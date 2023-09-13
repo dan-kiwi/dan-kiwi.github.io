@@ -12,6 +12,7 @@ const props = defineProps<{
   programmingLanguage: ProgramingLanguage;
   text: string;
   internalLink: string;
+  sourceCode: string | null;
   externalLink: string | null;
   year: string;
 }>();
@@ -56,9 +57,20 @@ const programmingLogo = () => {
           {{ props.text }}
         </p>
       </v-card-text>
-      <v-card-actions v-if="props.externalLink">
+      <v-card-actions v-if="props.sourceCode || props.externalLink">
         <!-- <v-btn to="props.internalLink">More Information</v-btn> -->
-        <v-btn :href="props.externalLink" target="_blank">Source Code</v-btn>
+        <v-btn
+          v-if="props.sourceCode"
+          v-bind:href="props.sourceCode"
+          target="_blank"
+          >Source Code</v-btn
+        >
+        <v-btn
+          v-if="props.externalLink"
+          :href="props.externalLink"
+          target="_blank"
+          >Live Demo</v-btn
+        >
       </v-card-actions>
     </v-card>
   </div>
