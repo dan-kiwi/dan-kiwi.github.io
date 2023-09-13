@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
+import DuolingoIconVue from "./components/icons/DuolingoIcon.vue";
+const duoIcon = DuolingoIconVue;
 </script>
 
 <template>
@@ -20,10 +22,13 @@ import { RouterLink, RouterView } from "vue-router";
           <v-icon icon="mdi-github" />
         </a>
         <a href="https://www.linkedin.com/in/dan-kiwi/" target="_blank">
-          <v-icon>mdi-linkedin</v-icon>
+          <v-icon icon="mdi-linkedin" />
+        </a>
+        <a href="https://www.duolingo.com/profile/Dan-kiwi">
+          <v-icon icon="mdi-translate-variant" />
         </a>
         <a href="mailto:career@dan-kiwi.dev">
-          <v-icon>mdi-email</v-icon>
+          <v-icon icon="mdi-email" />
         </a>
       </nav>
     </div>
