@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import DuolingoIconVue from "./components/icons/DuolingoIcon.vue";
-const duoIcon = DuolingoIconVue;
 </script>
 
 <template>
