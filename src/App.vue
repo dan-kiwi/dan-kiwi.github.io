@@ -22,7 +22,7 @@ import { RouterLink, RouterView } from "vue-router";
         <a href="https://www.linkedin.com/in/dan-kiwi/" target="_blank">
           <v-icon icon="mdi-linkedin" />
         </a>
-        <a href="https://www.duolingo.com/profile/Dan-kiwi">
+        <a href="https://www.duolingo.com/profile/Dan-kiwi" target="_blank">
           <v-icon icon="mdi-translate-variant" />
         </a>
         <a href="mailto:career@dan-kiwi.dev">
