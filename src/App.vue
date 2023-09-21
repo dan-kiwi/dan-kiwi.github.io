@@ -7,7 +7,7 @@ import { RouterLink, RouterView } from "vue-router";
     <img
       alt="Daniel Bishop's headshot"
       width="300"
-      src="@/assets/headshot.jpeg"
+      src="@/assets/headshot.jpg"
       class="headshot"
     />
     <h1>Daniel Bishop</h1>

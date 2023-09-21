@@ -1,22 +1,20 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import VuePdfEmbed from "vue-pdf-embed";
+import pdfFile from "@/assets/CV_20_9_23.pdf";
 let isLoading = ref(true);
-const pdfSource =
-  "https://cdn.jsdelivr.net/gh/dan-kiwi/public_files@main/CV_8_8_23.pdf";
-const downloadLink =
-  "https://github.com/dan-kiwi/public_files/blob/main/CV_8_8_23.pdf?raw=true";
 const handleDocumentRender = (args: any) => {
   console.log(args);
   isLoading.value = false;
 };
+const pdfData = ref(pdfFile);
 </script>
 
 <template>
   <main>
     <div class="CVContainer">
       <VuePdfEmbed
-        :source="pdfSource"
+        :source="pdfData"
         width="600"
         @rendered="handleDocumentRender"
       />
@@ -24,10 +22,10 @@ const handleDocumentRender = (args: any) => {
 
     <v-progress-circular v-if="isLoading" indeterminate color="primary" />
     <div v-else>
-      <h4>Last updated: 08/08/2023</h4>
+      <h4>Last updated: 20/09/2023</h4>
       <v-btn
         class="download-button"
-        :href="downloadLink"
+        :href="pdfData"
         download="Daniel Bishop's CV"
         color="primary"
         block
