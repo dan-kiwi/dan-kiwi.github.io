@@ -10,7 +10,7 @@ const props = defineProps<{
   title: string;
   subtitle: string;
   programmingLanguage: ProgramingLanguage;
-  text: string;
+  text: string[];
   internalLink: string;
   sourceCode: string | null;
   externalLink: string | null;
@@ -53,9 +53,11 @@ const programmingLogo = () => {
         </div>
       </div>
       <v-card-text>
-        <p>
-          {{ props.text }}
-        </p>
+        <div class="paragraph">
+          <p v-for="paragraph in props.text" :key="paragraph">
+            {{ paragraph }}
+          </p>
+        </div>
       </v-card-text>
       <v-card-actions v-if="props.sourceCode || props.externalLink">
         <!-- <v-btn to="props.internalLink">More Information</v-btn> -->
@@ -98,5 +100,10 @@ const programmingLogo = () => {
 
 .divCard {
   margin-bottom: 1rem;
+}
+
+.paragraph {
+  display: grid;
+  gap: 1rem;
 }
 </style>
