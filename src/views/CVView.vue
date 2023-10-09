@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import VuePdfEmbed from "vue-pdf-embed";
-import pdfFile from "@/assets/CV_9_10_23_public.pdf";
+import pdfFile from "@/assets/cv.pdf";
 let isLoading = ref(true);
 const handleDocumentRender = (args: any) => {
   console.log(args);
