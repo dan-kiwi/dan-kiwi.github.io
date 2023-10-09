@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import VuePdfEmbed from "vue-pdf-embed";
-import pdfFile from "@/assets/CV_20_9_23.pdf";
+import pdfFile from "@/assets/CV_9_10_23_public.pdf";
 let isLoading = ref(true);
 const handleDocumentRender = (args: any) => {
   console.log(args);
@@ -22,7 +22,7 @@ const pdfData = ref(pdfFile);
 
     <v-progress-circular v-if="isLoading" indeterminate color="primary" />
     <div v-else>
-      <h4>Last updated: 20/09/2023</h4>
+      <h4>Last updated: 09/10/2023</h4>
       <v-btn
         class="download-button"
         :href="pdfData"
