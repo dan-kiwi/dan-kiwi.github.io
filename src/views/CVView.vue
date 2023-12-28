@@ -22,7 +22,7 @@ const pdfData = ref(pdfFile);
 
     <v-progress-circular v-if="isLoading" indeterminate color="primary" />
     <div v-else>
-      <h4>Last updated: 09/10/2023</h4>
+      <h4>Last updated: 31/10/2023</h4>
       <v-btn
         class="download-button"
         :href="pdfData"
