@@ -13,7 +13,7 @@ import projectInfo from "@/assets/projectInfo";
       :key="project.title"
       :title="project.title"
       :subtitle="project.subtitle"
-      :programmingLanguage="project.programmingLanguage"
+      :programmingLanguages="project.programmingLanguages"
       :text="project.text"
       :internalLink="project.internalLink"
       :sourceCode="project.sourceCode"
@@ -23,6 +23,7 @@ import projectInfo from "@/assets/projectInfo";
         ' ' +
         project.date.getFullYear().toString()
       "
+      :archived="project.archived"
     />
   </main>
 </template>

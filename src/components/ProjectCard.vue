@@ -9,16 +9,17 @@ import ReactIcon from "./icons/ReactIcon.vue";
 const props = defineProps<{
   title: string;
   subtitle: string;
-  programmingLanguage: ProgramingLanguage;
+  programmingLanguages: ProgramingLanguage[];
   text: string[];
   internalLink: string;
   sourceCode: string | null;
   externalLink: string | null;
   year: string;
+  archived: boolean;
 }>();
 
-const programmingLogo = () => {
-  switch (props.programmingLanguage) {
+const programmingLogo = (programmingLanguage: ProgramingLanguage) => {
+  switch (programmingLanguage) {
     case "Vue":
       return VueIcon;
     case "TypeScript":
@@ -43,13 +44,22 @@ const programmingLogo = () => {
   <div class="divCard">
     <v-card>
       <div class="header">
-        <div class="titles">
+        <div class="firstRow">
           <v-card-title>{{ props.title }}</v-card-title>
-          <v-card-subtitle>{{ props.subtitle }}</v-card-subtitle>
+          <div class="programmingMetadata">
+            <v-chip v-if="props.archived" color="red">Archived</v-chip>
+            <v-chip v-else color="primary">Active</v-chip>
+            <v-card-text class="year">{{ props.year }}</v-card-text>
+            <v-icon
+              v-for="(language, index) in props.programmingLanguages"
+              :key="index"
+              :icon="programmingLogo(language)"
+              size="x-large"
+            />
+          </div>
         </div>
-        <div class="programmingMetadata">
-          <v-card-text class="year">{{ props.year }}</v-card-text>
-          <v-icon :icon="programmingLogo()" size="x-large" />
+        <div class="secondRow">
+          <v-card-subtitle>{{ props.subtitle }}</v-card-subtitle>
         </div>
       </div>
       <v-card-text>
@@ -60,7 +70,6 @@ const programmingLogo = () => {
         </div>
       </v-card-text>
       <v-card-actions v-if="props.sourceCode || props.externalLink">
-        <!-- <v-btn to="props.internalLink">More Information</v-btn> -->
         <v-btn
           v-if="props.sourceCode"
           v-bind:href="props.sourceCode"
@@ -81,9 +90,20 @@ const programmingLogo = () => {
 <style scoped>
 .header {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.firstRow {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  width: 100%;
+}
+
+.secondRow {
+  align-self: flex-start;
 }
 
 .programmingMetadata {
