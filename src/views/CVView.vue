@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import VuePdfEmbed from "vue-pdf-embed";
-import pdfFile from "@/assets/cv.pdf";
+// import pdfFile from "@/assets/cv.pdf";
 let isLoading = ref(true);
 const handleDocumentRender = (args: any) => {
   console.log(args);
   isLoading.value = false;
 };
-const pdfData = ref(pdfFile);
+// const pdfData = ref(pdfFile);
 </script>
 
 <template>
   <main>
     <div class="CVContainer">
-      <VuePdfEmbed
+      <!-- <VuePdfEmbed
         :source="pdfData"
         width="600"
         @rendered="handleDocumentRender"
@@ -31,7 +31,8 @@ const pdfData = ref(pdfFile);
         block
       >
         Download
-      </v-btn>
+      </v-btn> -->
+      
     </div>
   </main>
 </template>
