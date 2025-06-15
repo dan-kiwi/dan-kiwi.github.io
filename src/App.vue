@@ -16,16 +16,16 @@ import { RouterLink, RouterView } from "vue-router";
         <RouterLink to="/">About me</RouterLink>
         <RouterLink to="/cv">CV</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
-        <a href="https://github.com/dan-kiwi/" target="_blank">
+        <a href="https://github.com/danbishop-nz/" target="_blank">
           <v-icon icon="mdi-github" />
         </a>
-        <a href="https://www.linkedin.com/in/dan-kiwi/" target="_blank">
+        <a href="https://www.linkedin.com/in/danbishop-nz/" target="_blank">
           <v-icon icon="mdi-linkedin" />
         </a>
-        <a href="https://www.duolingo.com/profile/Dan-kiwi" target="_blank">
+        <a href="https://www.duolingo.com/profile/Danbishop-nz" target="_blank">
           <v-icon icon="mdi-translate-variant" />
         </a>
-        <a href="mailto:career@dan-kiwi.dev">
+        <a href="mailto:career@danbishop.dev">
           <v-icon icon="mdi-email" />
         </a>
       </nav>

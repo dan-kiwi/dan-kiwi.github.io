@@ -1,7 +1,7 @@
 {
   "name": "personal_website",
   "version": "1.0.4",
-  "homepage": "https://www.dan-kiwi.dev",
+  "homepage": "https://www.danbishop.dev",
   "private": true,
   "scripts": {
     "dev": "vite",
